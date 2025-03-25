@@ -17,7 +17,7 @@ import JhonLukas.Cardapioo.Entity.FoodResponseDTO;
 import JhonLukas.Cardapioo.Repository.Repository;
 
 @RestController
-@RequestMapping("food") 
+@RequestMapping("food")
 public class FoodController {
 
 	@Autowired
@@ -25,24 +25,19 @@ public class FoodController {
 
 	@GetMapping
 	public List<FoodResponseDTO> getAll() {
-	    List<FoodResponseDTO> foodList = repository.findAll().stream()
-	        .map(JhonLukas.Cardapioo.Entity.FoodResponseDTO::new)
-	        .collect(Collectors.toList());
-	    return foodList;
+		List<FoodResponseDTO> foodList = repository.findAll().stream()
+				.map(JhonLukas.Cardapioo.Entity.FoodResponseDTO::new).collect(Collectors.toList());
+		return foodList;
 
 	}
-	
+
 	@PostMapping
-	public ResponseEntity<FoodResponseDTO> AddFood(@RequestBody FoodRequestDTO data) {
-	    Food newFood = new Food();
-	    newFood.setTitle(data.title());  
-	    newFood.setImage(data.image()); 
-	    newFood.setPrice(data.price());
-
-	    repository.save(newFood);
-
-	    return ResponseEntity.ok(new FoodResponseDTO(newFood));
+	public void saveFood(@RequestBody FoodRequestDTO data) {
+		Food fooddata = new Food();
+		fooddata.setTitle(data.title());
+		fooddata.setImage(data.image());
+		fooddata.setPrice(data.price());
+		repository.save(fooddata);
 	}
 
 }
-
