@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cardápio</h1>
+
+    <!-- Formulário para adicionar comida -->
+    <form id="foodForm">
+        <input type="text" id="title" placeholder="Nome da comida" required>
+        <input type="text" id="image" placeholder="URL da imagem" required>
+        <input type="number" id="price" placeholder="Preço" required>
+        <button type="submit">Adicionar Comida</button>
+    </form>
+
+    <!-- Lista onde os itens do cardápio serão exibidos -->
+    <div id="menuList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
