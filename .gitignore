@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /.metadata/
-=======
+
 # Compiled class file
 *.class
 
@@ -23,42 +21,4 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
->>>>>>> 6a26539851d7b799034779bd356640d5241b5d9f
-=======
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
->>>>>>> a812812 (implementando Front-End no estudo)
+# virtual machine crash logs, see http://www.java.com/en/download/help/error
